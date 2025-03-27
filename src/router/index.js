@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from "vue-router";
+import { createRouter, createWebHashHistory } from "vue-router"; // modificado para hash history teste
 
 const routes = [
   {
@@ -23,7 +23,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(), // modificado para hash history teste
   routes,
   scrollBehavior() {
     return { top: 0, behavior: "smooth" };
